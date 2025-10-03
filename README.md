@@ -64,9 +64,9 @@ Subprocess - Execução de processos externos
 📦 Instalação
 Pré-requisitos do Sistema
 bash
-# Instalar Tesseract OCR
-# Windows: https://github.com/UB-Mannheim/tesseract/wiki
-# Linux (Debian/Ubuntu): 
+## Instalar Tesseract OCR
+## Windows: https://github.com/UB-Mannheim/tesseract/wiki
+## Linux (Debian/Ubuntu): 
 sudo apt update && sudo apt install tesseract-ocr
 
 # Linux (RedHat/CentOS):
@@ -84,6 +84,7 @@ python
 pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"  # Linux
 # Para Windows, descomente e ajuste:
 # pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
 🚀 Como Usar
 Execução do Sistema
 bash
@@ -107,17 +108,20 @@ text
 Inserção de dados → Verificação de erros → Processamento OCR → 
 Análise de estado → Ação condicional → Próximo registro
 Estrutura de Arquivos
+
 text
+
 sistema-automacao-cms/
-├── cms_grafica.py          # Aplicação principal com GUI
-├── coordenada.py           # Capturador de coordenadas
-├── coordenadas.json        # Configurações de coordenadas (gerado)
-├── automacao_log.txt       # Logs de execução (gerado)
-├── aprendizado.py          # Script de aprendizado (referência)
-└── imagens/                # Diretório para imagens de referência
+├── cms_grafica.py        
+├── coordenada.py           
+├── coordenadas.json        
+├── automacao_log.txt       
+├── aprendizado.py          
+└── imagens/                
     ├── erro.png
     ├── erro1.png
     └── erro2.png
+    
 🔧 Funcionalidades Detalhadas
 🎯 Aplicação Principal (cms_grafica.py)
 Interface Gráfica:
@@ -244,17 +248,21 @@ Fallbacks para diferentes cenários
 Interrupção segura com Ctrl+C
 
 🔄 Fluxo de Processamento Completo
+
 Fase 1: Inserção e Validação
 text
 Clique PF → Clique Contador → Colar Dado → Enter → Verificar Erro → Clique Cliente
+
 Fase 2: Análise e Decisão
 text
 Captura Tela → OCR → Processar Texto → Identificar Estado → Selecionar Fluxo
+
 Fase 3: Execução Condicional
 text
 Estado "Registado" → Fluxo Completo de Registro
 Estado "Processamento" → Fluxo Simplificado de Acompanhamento
 Estado "Introduzido" → Fluxo Padrão de Inserção
+
 ⚠️ Considerações Importantes
 Requisitos de Sistema
 Resolução de tela consistente durante a execução

@@ -2,15 +2,11 @@
 
 > Sistema avançado de automação para processamento de dados em sistemas de gestão de clientes (CMS) com interface gráfica intuitiva
 
-<div align="center">
-
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![Automation](https://img.shields.io/badge/Automation-Desktop%20GUI-orange.svg)
 ![Version](https://img.shields.io/badge/version-2.0-green.svg)
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-lightgrey.svg)
 ![License](https://img.shields.io/badge/license-MIT-yellow.svg)
-
-</div>
 
 ## 📖 Sobre o Projeto
 
@@ -322,14 +318,13 @@ Distribuído sob licença MIT. Veja o arquivo `LICENSE` para mais informações.
 
 **Zerdone Rocha**
 
-- 📧 Email: zerdone2301@gmail.com
 - 💼 LinkedIn: [Zerdone Rocha](https://linkedin.com/in/zerdone-rocha)
 - 🐙 GitHub: [HackMaster300](https://github.com/HackMaster300)
 
 ## 📈 Resultados e Benefícios
 
 ### ⏱️ Eficiência Operacional
-- Redução de até 90% no tempo de procesamento manual
+- Redução de até 90% no tempo de processamento manual
 - Processamento contínuo 24/7 sem intervenção humana
 - Escalabilidade para volumes ilimitados de dados
 
@@ -351,8 +346,6 @@ Distribuído sob licença MIT. Veja o arquivo `LICENSE` para mais informações.
 
 ![GitHub Stars](https://img.shields.io/github/stars/HackMaster300/cms-automation?style=social)
 ![GitHub Forks](https://img.shields.io/github/forks/HackMaster300/cms-automation?style=social)
-![GitHub Issues](https://img.shields.io/github/issues/HackMaster300/cms-automation)
-![GitHub Last Commit](https://img.shields.io/github/last-commit/HackMaster300/cms-automation)
 
 **🚀 Pronto para revolucionar seu fluxo de trabalho com automação inteligente!**
 

@@ -1,167 +1,164 @@
-🤖 Sistema de Automação CMS V2.0
-Sistema avançado de automação para processamento de dados em sistemas de gestão de clientes (CMS) com interface gráfica intuitiva
+# 🤖 Sistema de Automação CMS V2.0
+
+> Sistema avançado de automação para processamento de dados em sistemas de gestão de clientes (CMS) com interface gráfica intuitiva
+
+<div align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![](https://img.shields.io/badge/Automation-Desktop%20GUI-orange.svg)
+![Automation](https://img.shields.io/badge/Automation-Desktop%20GUI-orange.svg)
 ![Version](https://img.shields.io/badge/version-2.0-green.svg)
-![](https://img.shields.io/badge/platform-Windows%20/%20Linux-lightgrey.svg)
-![](https://img.shields.io/badge/license-MIT-yellow.svg)
+![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-lightgrey.svg)
+![License](https://img.shields.io/badge/license-MIT-yellow.svg)
 
-📖 Sobre o Projeto
+</div>
+
+## 📖 Sobre o Projeto
+
 Sistema de automação completo desenvolvido em Python para processamento inteligente de grandes volumes de registros em plataformas CMS (Customer Management Systems). A ferramenta combina automação de interface gráfica com OCR inteligente para otimizar fluxos de trabalho complexos.
 
-✨ Funcionalidades Principais
-✅ Interface Gráfica Amigável - Controle completo através de GUI intuitiva
+### ✨ Funcionalidades Principais
 
-✅ Processamento em Lote - Automação de múltiplos registros sequenciais
+- ✅ **Interface Gráfica Amigável** - Controle completo através de GUI intuitiva
+- ✅ **Processamento em Lote** - Automação de múltiplos registros sequenciais
+- ✅ **OCR Inteligente** - Reconhecimento de texto em tempo real com Pytesseract
+- ✅ **Sistema de Coordenadas** - Captura e gestão automatizada de posições na tela
+- ✅ **Detecção de Erros Avançada** - Identificação visual de falhas no sistema
+- ✅ **Logs Detalhados** - Sistema completo de registro e filtragem de atividades
+- ✅ **Processamento Condicional** - Lógica adaptativa baseada no estado dos registros
 
-✅ OCR Inteligente - Reconhecimento de texto em tempo real com Pytesseract
+## 🛠️ Tecnologias Utilizadas
 
-✅ Sistema de Coordenadas - Captura e gestão automatizada de posições na tela
+### Linguagem Principal
+- **Python 3.8+** - Lógica principal de automação e interface
 
-✅ Detecção de Erros Avançada - Identificação visual de falhas no sistema
+### Bibliotecas de Automação
+- **PyAutoGUI** - Controle preciso de mouse e teclado
+- **Keyboard** - Detecção de eventos de teclado em tempo real
+- **Pyperclip** - Manipulação eficiente da área de transferência
+- **Mouse** - Captura avançada de eventos do mouse
 
-✅ Logs Detalhados - Sistema completo de registro e filtragem de atividades
+### Interface Gráfica
+- **Tkinter** - Interface gráfica nativa do Python
+- **ttk** - Componentes temáticos modernos
 
-✅ Processamento Condicional - Lógica adaptativa baseada no estado dos registros
+### Processamento de Imagens & OCR
+- **Pytesseract** - Reconhecimento óptico de caracteres (OCR)
+- **PIL (Pillow)** - Processamento avançado de imagens e capturas de tela
 
-🛠️ Tecnologias Utilizadas
-Linguagem Principal
-Python 3.8+ - Lógica principal de automação e interface
+### Utilitários
+- **JSON** - Armazenamento e gestão de configurações
+- **Time** - Controle preciso de delays e sincronização
+- **Re** - Processamento de expressões regulares
+- **OS** - Gestão de arquivos e diretórios
+- **Datetime** - Timestamps e gestão temporal
+- **Subprocess** - Execução de processos externos
 
-Bibliotecas de Automação
-PyAutoGUI - Controle preciso de mouse e teclado
+## 📦 Instalação
 
-Keyboard - Detecção de eventos de teclado em tempo real
+### Pré-requisitos do Sistema
 
-Pyperclip - Manipulação eficiente da área de transferência
-
-Mouse - Captura avançada de eventos do mouse
-
-Interface Gráfica
-Tkinter - Interface gráfica nativa do Python
-
-ttk - Componentes temáticos modernos
-
-Processamento de Imagens & OCR
-Pytesseract - Reconhecimento óptico de caracteres (OCR)
-
-PIL (Pillow) - Processamento avançado de imagens e capturas de tela
-
-Utilitários
-JSON - Armazenamento e gestão de configurações
-
-Time - Controle preciso de delays e sincronização
-
-Re - Processamento de expressões regulares
-
-OS - Gestão de arquivos e diretórios
-
-Datetime - Timestamps e gestão temporal
-
-Subprocess - Execução de processos externos
-
-📦 Instalação
-Pré-requisitos do Sistema
-bash
-## Instalar Tesseract OCR
-## Windows: https://github.com/UB-Mannheim/tesseract/wiki
-## Linux (Debian/Ubuntu): 
+```bash
+# Instalar Tesseract OCR
+# Windows: https://github.com/UB-Mannheim/tesseract/wiki
+# Linux (Debian/Ubuntu): 
 sudo apt update && sudo apt install tesseract-ocr
 
 # Linux (RedHat/CentOS):
 sudo yum install tesseract
-Instalação das Dependências Python
-bash
+```
+
+### Instalação das Dependências Python
+
+```bash
 # Instalar pacotes necessários
 pip install pyautogui pyperclip keyboard pillow pytesseract mouse
 
 # Ou via requirements.txt
 pip install -r requirements.txt
-Configuração do Tesseract OCR
-python
+```
+
+### Configuração do Tesseract OCR
+
+```python
 # No arquivo cms_grafica.py - Configuração automática incluída
 pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"  # Linux
 # Para Windows, descomente e ajuste:
 # pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+```
 
-🚀 Como Usar
-Execução do Sistema
-bash
+## 🚀 Como Usar
+
+### Execução do Sistema
+
+```bash
 # Executar aplicação principal
 python cms_grafica.py
 
 # Executar capturador de coordenadas
 python coordenada.py
-Fluxo de Trabalho Completo
-Configuração Inicial
+```
 
-text
-Executar coordenada.py → Capturar coordenadas da interface → Salvar automaticamente
-Preparação de Dados
+### Fluxo de Trabalho Completo
 
-text
-Carregar arquivo .txt com dados → Verificar prévia → Iniciar automação
-Processamento Automatizado
+1. **Configuração Inicial**
+   ```text
+   Executar coordenada.py → Capturar coordenadas da interface → Salvar automaticamente
+   ```
 
-text
-Inserção de dados → Verificação de erros → Processamento OCR → 
-Análise de estado → Ação condicional → Próximo registro
-Estrutura de Arquivos
+2. **Preparação de Dados**
+   ```text
+   Carregar arquivo .txt com dados → Verificar prévia → Iniciar automação
+   ```
 
-text
+3. **Processamento Automatizado**
+   ```text
+   Inserção de dados → Verificação de erros → Processamento OCR → 
+   Análise de estado → Ação condicional → Próximo registro
+   ```
 
+### Estrutura de Arquivos
+
+```
 sistema-automacao-cms/
-├── cms_grafica.py        
-├── coordenada.py           
-├── coordenadas.json        
-├── automacao_log.txt       
-├── aprendizado.py          
-└── imagens/                
+├── cms_grafica.py          # Aplicação principal com GUI
+├── coordenada.py           # Capturador de coordenadas
+├── coordenadas.json        # Configurações de coordenadas (gerado)
+├── automacao_log.txt       # Logs de execução (gerado)
+├── aprendizado.py          # Script de aprendizado (referência)
+└── imagens/                # Diretório para imagens de referência
     ├── erro.png
     ├── erro1.png
     └── erro2.png
-    
-🔧 Funcionalidades Detalhadas
-🎯 Aplicação Principal (cms_grafica.py)
-Interface Gráfica:
+```
 
-Tela de carregamento com progresso
+## 🔧 Funcionalidades Detalhadas
 
-Controles intuitivos de automação
+### 🎯 Aplicação Principal (cms_grafica.py)
 
-Visualização de logs em tempo real
+**Interface Gráfica:**
+- Tela de carregamento com progresso
+- Controles intuitivos de automação
+- Visualização de logs em tempo real
+- Sistema de filtros avançado para logs
 
-Sistema de filtros avançado para logs
+**Recursos Principais:**
+- Inicialização automática de coordenadas
+- Processamento em lote com progresso
+- Detecção visual de erros
+- Sistema de recuperação de falhas
+- Estatísticas detalhadas de execução
 
-Recursos Principais:
+### 🖱️ Capturador de Coordenadas (coordenada.py)
 
-Inicialização automática de coordenadas
+**Características:**
+- Interface dedicada para captura de coordenadas
+- Detecção inteligente de cliques fora da janela
+- Progresso visual do processo de captura
+- Salvamento automático em JSON
+- Reinicialização e continuação seguras
 
-Processamento em lote com progresso
-
-Detecção visual de erros
-
-Sistema de recuperação de falhas
-
-Estatísticas detalhadas de execução
-
-🖱️ Capturador de Coordenadas (coordenada.py)
-Características:
-
-Interface dedicada para captura de coordenadas
-
-Detecção inteligente de cliques fora da janela
-
-Progresso visual do processo de captura
-
-Salvamento automático em JSON
-
-Reinicialização e continuação seguras
-
-Coordenadas Capturadas:
-
-python
+**Coordenadas Capturadas:**
+```python
 [
     "pf", "contador_btn", "ok_btn", "cliente", "seguinte", "processamento",
     "processamento_seguinte", "imprimir", "cancelar", "processamento_sim",
@@ -169,26 +166,31 @@ python
     "propriedade", "gis_x", "gis_y", "estado_instalacao", "num_luz", "quartos",
     "registro", "registado_sim", "anterior", "fim_rolagem"
 ]
-🔍 Sistema OCR Avançado
-python
+```
+
+### 🔍 Sistema OCR Avançado
+
+```python
 # Captura e análise inteligente de texto
 screenshot = pyautogui.screenshot(region=area)
 texto_extraido = pytesseract.image_to_string(screenshot)
 
 # Processamento de múltiplos estados
 linhas = [linha.strip() for linha in texto_extraido.split('\n') if linha.strip()]
-⚡ Estados de Processamento Detectados
-"Registado" - Processamento completo e finalizado
+```
 
-"Em processamento" - Pendências que requerem ações específicas
+### ⚡ Estados de Processamento Detectados
 
-"Introduzido" - Fluxo padrão de inserção inicial
+- **"Registado"** - Processamento completo e finalizado
+- **"Em processamento"** - Pendências que requerem ações específicas  
+- **"Introduzido"** - Fluxo padrão de inserção inicial
+- **"Suspeita de fraude"** - Casos especiais com tratamento diferenciado
 
-"Suspeita de fraude" - Casos especiais com tratamento diferenciado
+## ⚙️ Configuração
 
-⚙️ Configuração
-Arquivo de Coordenadas (coordenadas.json)
-json
+### Arquivo de Coordenadas (coordenadas.json)
+
+```json
 {
     "pf": [53, 250],
     "contador_btn": [366, 251],
@@ -198,168 +200,164 @@ json
     "processamento": [351, 356],
     "...": "..."
 }
-Configuração de Imagens de Erro
-python
+```
+
+### Configuração de Imagens de Erro
+
+```python
 # Ajuste estos caminhos conforme seu ambiente
 erro_img_path = "/home/zebito/Downloads/drive/cms/linux/erro.png"
 erro_img_path1 = "/home/zebito/Downloads/drive/cms/linux/erro1.png" 
 erro_img_path2 = "/home/zebito/Downloads/drive/cms/linux/erro2.png"
-Formato do Arquivo de Dados
-text
+```
+
+### Formato do Arquivo de Dados
+
+```text
 01317788162
 54280992519
 45135422488
 78013515509
 ...
-📊 Sistema de Logs e Monitoramento
-Logs Detalhados
-Timestamp preciso de todas as operações
+```
 
-Categorização por tipo de atividade
+## 📊 Sistema de Logs e Monitoramento
 
-Filtragem avançada por data e categoria
+### Logs Detalhados
+- Timestamp preciso de todas as operações
+- Categorização por tipo de atividade
+- Filtragem avançada por data e categoria
+- Exportação automática para arquivo
 
-Exportação automática para arquivo
-
-Estatísticas em Tempo Real
-python
+### Estatísticas em Tempo Real
+```python
 print(f"Total processado: {total_processados}")
 print(f"Introduzidos: {contador_introduzido}")
 print(f"Em processamento: {contador_em_processamento}")
 print(f"Registados: {contador_registados}")
 print(f"Erros detectados: {numeros_errados}")
-🚨 Gestão de Erros e Recuperação
-Mecanismos de Detecção
-Timeout de interface - Reinteligência automática
+```
 
-Imagens não encontradas - Fallbacks alternativos
+## 🚨 Gestão de Erros e Recuperação
 
-Erros de OCR - Processamento condicional
+### Mecanismos de Detecção
+- **Timeout de interface** - Reinteligência automática
+- **Imagens não encontradas** - Fallbacks alternativos
+- **Erros de OCR** - Processamento condicional
+- **Estados inesperados** - Logs detalhados para debugging
 
-Estados inesperados - Logs detalhados para debugging
+### Estratégias de Recuperação
+1. Reintentos automáticos com delays progressivos
+2. Múltiplos métodos de detecção de erro
+3. Fallbacks para diferentes cenários
+4. Interrupção segura com Ctrl+C
 
-Estratégias de Recuperação
-Reintentos automáticos com delays progressivos
+## 🔄 Fluxo de Processamento Completo
 
-Múltiplos métodos de detecção de erro
-
-Fallbacks para diferentes cenários
-
-Interrupção segura com Ctrl+C
-
-🔄 Fluxo de Processamento Completo
-
-Fase 1: Inserção e Validação
-text
+### Fase 1: Inserção e Validação
+```text
 Clique PF → Clique Contador → Colar Dado → Enter → Verificar Erro → Clique Cliente
+```
 
-Fase 2: Análise e Decisão
-text
+### Fase 2: Análise e Decisão
+```text
 Captura Tela → OCR → Processar Texto → Identificar Estado → Selecionar Fluxo
+```
 
-Fase 3: Execução Condicional
-text
+### Fase 3: Execução Condicional
+```text
 Estado "Registado" → Fluxo Completo de Registro
 Estado "Processamento" → Fluxo Simplificado de Acompanhamento
 Estado "Introduzido" → Fluxo Padrão de Inserção
+```
 
-⚠️ Considerações Importantes
-Requisitos de Sistema
-Resolução de tela consistente durante a execução
+## ⚠️ Considerações Importantes
 
-Acesso administrativo para automação de interface
+### Requisitos de Sistema
+- Resolução de tela consistente durante a execução
+- Acesso administrativo para automação de interface
+- Ambiente estável sem interferências externas
+- Backup dos dados antes do processamento em lote
 
-Ambiente estável sem interferências externas
+### Limitações Conhecidas
+- Dependente da estabilidade da interface gráfica alvo
+- Requer calibração inicial das coordenadas
+- Sensível a mudanças no layout do CMS
+- Performance varia com a capacidade do sistema
 
-Backup dos dados antes do processamento em lote
+## 🛡️ Boas Práticas Recomendadas
 
-Limitações Conhecidas
-Dependente da estabilidade da interface gráfica alvo
+### Antes da Execução
+1. Execute backup completo dos dados
+2. Teste em ambiente controlado com amostras pequenas
+3. Verifique e calibre todas as coordenadas
+4. Prepare plano de rollback para emergências
 
-Requer calibração inicial das coordenadas
+### Durante a Execução
+1. Monitore os logs constantemente
+2. Mantenha o sistema estável sem interferências
+3. Evite uso manual do computador durante o processamento
+4. Tenha Ctrl+C preparado para interrupção rápida
 
-Sensível a mudanças no layout do CMS
+## 🤝 Contribuindo para o Projeto
 
-Performance varia com a capacidade do sistema
+### Como Contribuir
+1. Reporte bugs através do sistema de Issues
+2. Sugira melhorias no sistema de automação
+3. Compartilhe configurações para diferentes ambientes
+4. Documente casos de uso específicos
 
-🛡️ Boas Práticas Recomendadas
-Antes da Execução
-Execute backup completo dos dados
+### Áreas de Melhoria Futura
+- Interface de configuração gráfica mais avançada
+- Suporte a múltiplos layouts de CMS simultâneos
+- Sistema de templates para diferentes fluxos de trabalho
+- Relatórios em PDF automáticos com gráficos
+- API REST para integração com outros sistemas
 
-Teste em ambiente controlado com amostras pequenas
+## 📄 Licença
 
-Verifique e calibre todas as coordenadas
+Distribuído sob licença MIT. Veja o arquivo `LICENSE` para mais informações.
 
-Prepare plano de rollback para emergências
+## 👤 Autor
 
-Durante a Execução
-Monitore os logs constantemente
+**Zerdone Rocha**
 
-Mantenha o sistema estável sem interferências
+- 📧 Email: zerdone2301@gmail.com
+- 💼 LinkedIn: [Zerdone Rocha](https://linkedin.com/in/zerdone-rocha)
+- 🐙 GitHub: [HackMaster300](https://github.com/HackMaster300)
 
-Evite uso manual do computador durante o processamento
+## 📈 Resultados e Benefícios
 
-Tenha Ctrl+C preparado para interrupção rápida
+### ⏱️ Eficiência Operacional
+- Redução de até 90% no tempo de procesamento manual
+- Processamento contínuo 24/7 sem intervenção humana
+- Escalabilidade para volumes ilimitados de dados
 
-🤝 Contribuindo para o Projeto
-Como Contribuir
-Reporte bugs através do sistema de Issues
+### 🎯 Precisão e Confiabilidade
+- Eliminação de erros humanos na digitação
+- Validação automática e consistente de dados
+- Processamento uniforme em todos os registros
 
-Sugira melhorias no sistema de automação
+### 📊 Controle e Transparência
+- Logs detalhados para auditoria e compliance
+- Métricas precisas de performance e eficiência
+- Detecção proativa de problemas e otimizações
 
-Compartilhe configurações para diferentes ambientes
-
-Documente casos de uso específicos
-
-Áreas de Melhoria Futura
-Interface de configuração gráfica mais avançada
-
-Suporte a múltiplos layouts de CMS simultâneos
-
-Sistema de templates para diferentes fluxos de trabalho
-
-Relatórios em PDF automáticos com gráficos
-
-API REST para integração com outros sistemas
-
-📄 Licença
-Distribuído sob licença MIT. Veja o arquivo LICENSE para mais informações.
-
-👤 Autor
-Zerdone Rocha
-
-💼 LinkedIn: Zerdone Rocha
-
-🐙 GitHub: HackMaster300
-
-📈 Resultados e Benefícios
-
-⏱️ Eficiência Operacional
-Redução de até 90% no tempo de processamento manual
-
-Processamento contínuo 24/7 sem intervenção humana
-
-Escalabilidade para volumes ilimitados de dados
-
-🎯 Precisão e Confiabilidade
-Eliminação de erros humanos na digitação
-
-Validação automática e consistente de dados
-
-Processamento uniforme em todos os registros
-
-📊 Controle e Transparência
-Logs detalhados para auditoria e compliance
-
-Métricas precisas de performance e eficiência
-
-Detecção proativa de problemas e otimizações
+---
 
 <div align="center">
-⚡ Automatize processos repetitivos e foque no que realmente importa!
-https://img.shields.io/github/stars/HackMaster300/cms-automation?style=social
-https://img.shields.io/github/forks/HackMaster300/cms-automation?style=social
 
-🚀 Pronto para revolucionar seu fluxo de trabalho com automação inteligente!
+### ⚡ **Automatize processos repetitivos e foque no que realmente importa!**
+
+![GitHub Stars](https://img.shields.io/github/stars/HackMaster300/cms-automation?style=social)
+![GitHub Forks](https://img.shields.io/github/forks/HackMaster300/cms-automation?style=social)
+![GitHub Issues](https://img.shields.io/github/issues/HackMaster300/cms-automation)
+![GitHub Last Commit](https://img.shields.io/github/last-commit/HackMaster300/cms-automation)
+
+**🚀 Pronto para revolucionar seu fluxo de trabalho com automação inteligente!**
 
 </div>
+
+---
+
+*Última atualização: Dezembro 2024 | Versão 2.0*

@@ -1,11 +1,11 @@
 🤖 Sistema de Automação CMS V2.0
 Sistema avançado de automação para processamento de dados em sistemas de gestão de clientes (CMS) com interface gráfica intuitiva
 
-https://img.shields.io/badge/Python-3.8+-blue.svg
-https://img.shields.io/badge/Automation-Desktop%2520GUI-orange.svg
-https://img.shields.io/badge/version-2.0-green.svg
-https://img.shields.io/badge/platform-Windows%2520%257C%2520Linux-lightgrey.svg
-https://img.shields.io/badge/license-MIT-yellow.svg
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![](https://img.shields.io/badge/Automation-Desktop%20GUI-orange.svg)
+![Version](https://img.shields.io/badge/version-2.0-green.svg)
+![](https://img.shields.io/badge/platform-Windows%20/%20Linux-lightgrey.svg)
+![](https://img.shields.io/badge/license-MIT-yellow.svg)
 
 📖 Sobre o Projeto
 Sistema de automação completo desenvolvido em Python para processamento inteligente de grandes volumes de registros em plataformas CMS (Customer Management Systems). A ferramenta combina automação de interface gráfica com OCR inteligente para otimizar fluxos de trabalho complexos.
